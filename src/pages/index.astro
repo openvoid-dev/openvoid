@@ -1,0 +1,54 @@
+---
+import '@/styles/globals.css'
+
+import Base from "../layouts/Base.astro"
+import { Button } from '@/components/ui/button'
+
+const title = "Open Void"
+const description = "Open Void is a collection of open source projects and resources for developers and designers."
+---
+
+<Base {title} {description}>
+	<main>
+		<!-- Hero -->
+		<section>
+			<p class="text-lg">At <strong>Open Void</strong>, our mission is to bring cutting-edge web development solutions to life. We strive to create a space where ideas flourish, code evolves, and collaboration thrives. Join us on this journey as we push the boundaries of what's possible in the digital landscape.</p>
+
+			<ul class="mt-8 text-lg">
+				<li class="mb-4"><strong>Open:</strong> Embracing openness, transparency, and collaboration. In the spirit of <span class="text-purple-500">open</span> source, we believe in sharing knowledge, fostering community, and contributing to the collective growth of the development ecosystem.</li>
+
+				<li><strong>Void:</strong> Signifying a canvas of infinite potential. Our projects, like a <span class="text-purple-500">void</span>, are not constrained by pre-defined limits, encouraging exploration, innovation, and the pursuit of groundbreaking solutions.</li>
+			</ul>
+		</section>
+
+		<!-- Docs -->
+		<section>
+			<h2 class="mt-16 mb-4 text-2xl font-bold">Documentation</h2>
+
+			<p class="text-lg">Explore our collection of open source projects and resources for developers.</p>
+
+			<ul class="mt-2 text-lg">
+				<li>
+					<Button variant="link" className='p-0 text-lg'>
+						<a href="https://coderepo.openvoid.dev/" class="text-purple-500">Code Repo</a>
+					</Button>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Blog -->
+		<section>
+			<h2 class="mt-16 mb-4 text-2xl font-bold">Blog</h2>
+
+			<p class="text-lg">Read our latest articles, tutorials, and insights on web development and design.</p>
+
+			<ul class="mt-2 text-lg">
+				<li>
+					<Button variant="link" className='p-0 text-lg'>
+						<a href="/blog" class="text-purple-500">Blog</a>
+					</Button>
+				</li>
+			</ul>
+		</section>
+	</main>
+</Base>
