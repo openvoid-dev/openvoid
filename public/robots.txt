@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://www.openvoid.dev/sitemap-index.xml
+Disallow:
