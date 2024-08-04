@@ -1,0 +1,28 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header class="m-0 px-4 py-4 bg-bg-primary/80 sticky top-0">
+	<nav class="container max-w-4xl flex items-center justify-between">
+		<div class="flex items-center space-x-8">
+			<HeaderLink href="/">Mission</HeaderLink>
+			<HeaderLink href="https://coderepo.openvoid.dev/" target="_blank">Code Repo</HeaderLink>
+		</div>
+
+		<HeaderLink href="/">Open Void</HeaderLink>
+	</nav>
+</header>
+<style>
+	nav a {
+		border-bottom: 4px solid transparent;
+	}
+	.social-links,
+	.social-links a {
+		display: flex;
+	}
+	@media (max-width: 720px) {
+		.social-links {
+			display: none;
+		}
+	}
+</style>
