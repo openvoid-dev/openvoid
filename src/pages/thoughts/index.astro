@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
-const posts = (await getCollection('dev')).sort(
+const posts = (await getCollection('thoughts')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
@@ -18,15 +18,19 @@ const posts = (await getCollection('dev')).sort(
 	</head>
 	<body class="min-h-screen">
 		<Header />
-		<main class="container bg-red-400 px-24 max-w-7xl my-20">
-			<section>
-				<ul>
+		<main class="container px-24 max-w-7xl my-28">
+			<hgroup>
+				<h1 class="text-[#b4befe] text-6xl mb-6 font-bold tracking-tighter">Our Thoughts</h1>
+				<p class="text-4xl">Collection of our ideas, thoughts, articles and writings.</p>
+			</hgroup>
+
+			<section class="mt-20">
+				<ul class="flex flex-col gap-6">
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
+								<a href={`/thoughts/${post.slug}/`}>
+									<h4 class="title underline">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
