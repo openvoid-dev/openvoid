@@ -1,7 +1,6 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
@@ -12,16 +11,19 @@ const posts = (await getCollection('thoughts')).sort(
 ---
 
 <!doctype html>
+
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+
 	<body class="min-h-screen">
 		<Header />
-		<main class="container px-24 max-w-7xl my-28">
+
+		<main class="container max-w-5xl my-24">
 			<hgroup>
-				<h1 class="text-[#b4befe] text-6xl mb-6 font-bold tracking-tighter">Our Thoughts</h1>
-				<p class="text-4xl">Collection of our ideas, thoughts, articles and writings.</p>
+				<h1 class="text-[#b4befe] mb-6 font-bold tracking-tighter italic text-5xl">Our Thoughts</h1>
+				<p class="text-2xl italic text-[#b4befe]">Collection of our ideas, thoughts, articles and writings.</p>
 			</hgroup>
 
 			<section class="mt-20">
@@ -41,6 +43,5 @@ const posts = (await getCollection('thoughts')).sort(
 				</ul>
 			</section>
 		</main>
-		<Footer />
 	</body>
 </html>

@@ -8,6 +8,7 @@ export default {
         },
         container: {
             padding: "1rem",
+            center: true,
         },
         extend: {
             colors: {

@@ -1,7 +1,6 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
@@ -12,25 +11,28 @@ const posts = (await getCollection('dev')).sort(
 ---
 
 <!doctype html>
+
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+
 	<body class="min-h-screen">
 		<Header />
-		<main class="container px-24 max-w-7xl my-28">
+
+		<main class="container max-w-5xl my-24">
 			<hgroup>
-				<h1 class="text-[#b4befe] text-6xl mb-6 font-bold tracking-tighter">How do we code?</h1>
-				<p class="text-4xl">The Open Void dev blog about our products and how we create them...</p>
+				<h1 class="text-[#b4befe] mb-6 font-bold tracking-tighter italic text-5xl">How do we code?</h1>
+				<p class="text-2xl italic text-[#b4befe]">The Open Void dev blog about our products and how we create them...</p>
 			</hgroup>
 
 			<section class="mt-20">
 				<ul class="flex flex-col gap-6">
 					{
 						posts.map((post) => (
-							<li>
+							<li class="">
 								<a href={`/dev/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
+									<img width={1200} height={360} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
@@ -42,6 +44,5 @@ const posts = (await getCollection('dev')).sort(
 				</ul>
 			</section>
 		</main>
-		<Footer />
 	</body>
 </html>

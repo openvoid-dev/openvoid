@@ -63,7 +63,6 @@
 }
 
 body {
-    /* font-family: "Atkinson", sans-serif; */
     margin: 0;
     padding: 0;
     text-align: left;
@@ -129,8 +128,8 @@ img {
 }
 code {
     padding: 2px 5px;
-    @apply bg-[#11111b];
     border-radius: 2px;
+    @apply bg-[#11111b];
 }
 pre {
     padding: 1.5em;
@@ -174,4 +173,8 @@ hr {
     clip-path: inset(50%);
     /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
     white-space: nowrap;
+}
+
+a.active {
+    @apply underline underline-offset-8 decoration-wavy;
 }

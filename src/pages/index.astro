@@ -1,29 +1,40 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
+
 <html lang="en">
 	<head class="dark">
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+
 	<body class="min-h-screen">
 		<Header />
-		<main class="container px-24 max-w-7xl my-28">
-			<h1 class="text-[#b4befe] text-7xl mb-8 font-bold">OPEN VOID</h1>
-			<p class="text-3xl">
-				At Open Void, our mission is to bring cutting-edge web development solutions to life. We strive to create a space where ideas flourish, code evolves, and collaboration thrives. Join us on this journey as we push the boundaries of what's possible in the digital landscape.
+
+		<main class="container max-w-5xl my-24">
+			<h1 class="text-[#b4befe]">/**</h1>
+			<p class="text-2xl leading-relaxed mb-10 text-[#b4befe] mt-10">
+				<span class="text-4xl">*</span> <i>Mediocrity is a disease, an insidious force that dulls the edges of our creativity and ambition. It's the easy path, the one littered with half-hearted efforts and "good enough" solutions. We see it everywhere - in the bloated software, the uninspired designs, the lackluster games. This isn't just about missing the mark; it's about a mindset that accepts the bare minimum and calls it a day.</i>
 			</p>
-			<p class="text-3xl">
-				<span class="text-[#b4befe] font-bold">Open:</span> Embracing openness, transparency, and collaboration. In the spirit of open source, we believe in sharing knowledge, fostering community, and contributing to the collective growth of the development ecosystem.
+			<p class="text-2xl leading-relaxed mb-10 text-[#b4befe] mt-10">
+				<span class="text-4xl">*</span> <i>But why do we tolerate it? Is it fear of failure? Apathy? Or simply a lack of vision? Whatever the reason, mediocrity is a betrayal of our potential. It's the antithesis of what we, as creators, should strive for. We should be pushing boundaries, challenging conventions, and pouring our souls into our work. Anything less is an affront to the craft.</i>
 			</p>
-			<p class="text-3xl">
-				<span class="text-[#b4befe] font-bold">Void:</span> Signifying a canvas of infinite potential. Our projects, like a void, are not constrained by pre-defined limits, encouraging exploration, innovation, and the pursuit of groundbreaking solutions.
+			<p class="text-2xl leading-relaxed mb-10 text-[#b4befe] mt-10">
+				<span class="text-4xl">*</span> <i>Rejecting mediocrity means embracing discomfort, demanding more from ourselves, and refusing to settle. It's about holding ourselves to a higher standard and recognizing that excellence is not a destination but a relentless pursuit. Let's not just make things that work; let's make things that inspire, that resonate, that stand the test of time. Because anything less is not just a disservice to ourselves, but to the world we aim to impact.</i>
 			</p>
+
+			<p class="text-2xl leading-relaxed mb-10 text-[#b4befe]">
+				<span class="text-4xl">*</span> <i> <span class="font-bold underline underline-offset-8 decoration-wavy">Open:</span> Embracing openness is more than a principle—it's a commitment. Transparency and collaboration aren't just buzzwords; they're the lifeblood of progress. In the spirit of open source, we stand by the belief that knowledge should be shared, communities should be nurtured, and every contribution fuels the collective growth of the development ecosystem. This is about tearing down walls, dissolving silos, and fostering an environment where ideas can cross-pollinate and flourish.</i>
+			</p>
+
+			<p class="text-2xl leading-relaxed mb-10 text-[#b4befe]">
+				<span class="text-4xl">*</span> <i><span class="font-bold underline underline-offset-8 decoration-wavy">Void:</span> The void represents a canvas of boundless potential. Our projects are like the void—unfettered by predefined limits. This isn’t just a metaphor; it’s an ethos. We dive into the unknown, embracing the uncharted territory where true innovation lives. Here, we aren't just solving problems; we're redefining what's possible, constantly pushing the boundaries in pursuit of groundbreaking solutions.</i>
+			</p>
+
+			<h1 class="text-[#b4befe]">*/</h1>
 		</main>
-		<Footer />
 	</body>
 </html>
