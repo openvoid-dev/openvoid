@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+    <head class="dark">
+        <BaseHead
+            title={SITE_TITLE}
+            description={SITE_DESCRIPTION}
+        />
+    </head>
+
+    <body class="min-h-screen">
+        <Header />
+
+        <main class="container max-w-5xl my-24">
+            <slot />
+        </main>
+    </body>
+</html>

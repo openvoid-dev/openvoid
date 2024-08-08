@@ -1,0 +1,26 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+const { slug, title, date } = Astro.props;
+---
+
+<li>
+    <a
+        href={`/thoughts/${slug}/`}
+        class="flex items-start justify-between italic group"
+    >
+        <h4 class="w-2/3 text-2xl">
+            <span>&#47;&#47;</span>
+            <span
+                class="group-hover:underline underline-offset-8 decoration-wavy"
+            >
+                {title}
+            </span>
+        </h4>
+        <p
+            class="text-2xl group-hover:underline underline-offset-8 decoration-wavy"
+        >
+            <FormattedDate date={date} />
+        </p>
+    </a>
+</li>

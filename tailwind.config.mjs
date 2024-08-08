@@ -13,7 +13,7 @@ export default {
         extend: {
             colors: {
                 "bg-primary": "#1e1e2e",
-                "primary-color": "#cdd6f4",
+                "primary-color": "#b4befe",
             },
         },
     },
