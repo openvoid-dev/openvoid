@@ -20,7 +20,7 @@ const posts = (await getCollection("thoughts")).sort(
             {
                 posts.map((post) => (
                     <PostComponent
-                        slug={post.slug}
+                        slug={`/thoughts/${post.slug}/`}
                         title={post.data.title}
                         date={post.data.pubDate}
                     />
