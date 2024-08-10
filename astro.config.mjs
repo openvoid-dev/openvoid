@@ -7,4 +7,10 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
     site: "https://openvoid.dev",
     integrations: [mdx(), sitemap(), tailwind()],
+    markdown: {
+        shikiConfig: {
+            theme: "catppuccin-frappe",
+            wrap: true,
+        },
+    },
 });

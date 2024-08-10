@@ -5,7 +5,7 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import PostComponent from "../../components/PostComponent.astro";
 
 const posts = (await getCollection("thoughts")).sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 

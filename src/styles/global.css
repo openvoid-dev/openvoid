@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @layer base {
+    /* Importing fonts */
+
     @font-face {
         font-family: "JetBrains Mono";
         font-style: normal;
@@ -43,6 +45,8 @@
         src: url(/fonts/JetBrainsMono-Bold.woff2) format("woff2");
     }
 
+    /* General classes */
+
     body {
         @apply text-primary-color bg-bg-primary m-0 p-0 break-words leading-[1.7];
     }
@@ -55,78 +59,124 @@
     h6 {
         @apply text-primary-color;
     }
+
     h1 {
-        font-size: 3.052em;
+        @apply text-5xl;
     }
+
     h2 {
-        font-size: 2.441em;
+        @apply text-4xl;
     }
+
     h3 {
-        font-size: 1.953em;
+        @apply text-3xl;
     }
+
     h4 {
-        font-size: 1.563em;
+        @apply text-2xl;
     }
+
     h5 {
-        font-size: 1.25em;
+        @apply text-xl;
     }
+
     strong,
     b {
-        font-weight: 700;
+        @apply font-bold;
     }
-    p {
-        margin-bottom: 1em;
-    }
-    .prose p {
-        margin-bottom: 2em;
-    }
+
     textarea {
         width: 100%;
         font-size: 16px;
     }
+
     input {
         font-size: 16px;
     }
+
     table {
         width: 100%;
     }
+
     img {
         max-width: 100%;
         height: auto;
         border-radius: 8px;
     }
+
     code {
-        padding: 2px 5px;
-        border-radius: 2px;
-        @apply bg-[#11111b];
+        @apply bg-[#11111b] py-[2px] px-[5px] rounded-sm;
     }
+
     pre {
-        padding: 1.5em;
-        border-radius: 8px;
+        @apply p-6 rounded-lg;
     }
+
     pre > code {
         all: unset;
     }
+
     blockquote {
-        border-left: 4px solid var(--accent);
-        padding: 0 0 0 20px;
-        margin: 0px;
-        font-size: 1.333em;
-    }
-    hr {
-        border: none;
-        border-top: 1px solid rgb(var(--gray-light));
-    }
-    @media (max-width: 720px) {
-        body {
-            font-size: 18px;
-        }
-        main {
-            padding: 1em;
-        }
+        @apply border-l-4 border-primary-color pl-5 m-0 text-xl;
     }
 
     a.active {
         @apply underline underline-offset-8 decoration-wavy;
+    }
+
+    /* Homepage classes */
+
+    .intro-text {
+        @apply text-2xl leading-relaxed my-10 italic before:content-['*'] before:text-4xl before:not-italic;
+    }
+
+    /* Classes for md content */
+
+    .prose {
+        @apply text-[#cdd6f4];
+    }
+
+    .prose p {
+        @apply text-xl leading-relaxed mb-6;
+    }
+
+    .prose h1 {
+        @apply mb-8 mt-10;
+    }
+    .prose h2 {
+        @apply mb-7 mt-10;
+    }
+    .prose h3 {
+        @apply mb-6 mt-10;
+    }
+    .prose h4 {
+        @apply mb-5 mt-10;
+    }
+    .prose h5 {
+        @apply mb-4 mt-10;
+    }
+    .prose h6 {
+        @apply mb-3 mt-10;
+    }
+
+    .prose em {
+        @apply text-[#a6adc8];
+    }
+
+    .prose ul,
+    ol {
+        @apply list-disc pl-10 text-xl mb-6;
+    }
+
+    .prose li {
+        @apply mb-2;
+    }
+
+    .prose a {
+        @apply underline underline-offset-4 decoration-wavy;
+    }
+
+    .prose pre {
+        @apply mb-6;
     }
 }
