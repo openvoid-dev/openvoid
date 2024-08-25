@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
@@ -16,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <body class="min-h-screen">
         <Header />
 
-        <main class="container max-w-5xl my-24">
+        <main class="container max-w-5xl py-24">
             <slot />
         </main>
     </body>

@@ -2,11 +2,21 @@
 
 This is the source of the official [Open Void](https://openvoid.xyz) website.
 
-_At Open Void, our mission is to bring cutting-edge web development solutions to life. We strive to create a space where ideas flourish, code evolves, and collaboration thrives. Join us on this journey as we push the boundaries of what's possible in the digital landscape._
+_At Open Void, we strive not to create mediocre products -- products with
+half-hearted efforts and "good enough" solutions._
+
+_We are tired of seeing bloated software filled with small, soul-sucking
+bugs that exist just because they can be fixed later, instead of
+creating something worthwhile, something that inspires people._
+
+_By rejecting mediocrity, we demand more from ourselves and refuse to
+settle for anything short of perfection._
 
 -   **Open:**
 
-    -   Embracing openness, transparency, and collaboration. In the spirit of open source, we believe in sharing knowledge, fostering community, and contributing to the collective growth of the development ecosystem.
+    -   We are here to embrace opennes of software and solutions.
 
 -   **Void:**
-    -   Signifying a canvas of infinite potential. Our projects, like a void, are not constrained by pre-defined limits, encouraging exploration, innovation, and the pursuit of groundbreaking solutions.
+    -   The void represents a place of boundless potential. To not limit
+        yourself by predefined thoughts and self-doubt, but to create something you
+        are proud of.
