@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "Open Void";
 export const SITE_DESCRIPTION =
-    "Embracing openness, transparency, and collaboration";
+    "At Open Void, we strive not to create mediocre products -- products with half-hearted efforts and 'good enough' solutions.";
