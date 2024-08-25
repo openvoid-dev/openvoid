@@ -1,16 +1,19 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header class="container max-w-5xl mt-20">
-	<nav class="flex items-center justify-between py-8">
-		<div class="flex items-center space-x-8">
-			<HeaderLink href="/">$our_mission</HeaderLink>
-			<HeaderLink href="/dev">$dev</HeaderLink>
-			<HeaderLink href="/thoughts">$thoughts</HeaderLink>
-		</div>
+    <nav class="flex items-center justify-between py-8">
+        <div class="flex items-center space-x-8">
+            <HeaderLink href="/">$our_mission</HeaderLink>
+            <HeaderLink href="/thoughts">$thoughts</HeaderLink>
+        </div>
 
-		<HeaderLink href="https://github.com/openvoid-dev" target="_blank">$github</HeaderLink>
-	</nav>
+        <HeaderLink
+            href="https://github.com/openvoid-dev"
+            target="_blank"
+        >
+            $github
+        </HeaderLink>
+    </nav>
 </header>
