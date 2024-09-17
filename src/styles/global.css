@@ -127,7 +127,7 @@
     /* Homepage classes */
 
     .intro-text {
-        @apply text-2xl leading-relaxed my-10 italic before:content-['*'] before:text-4xl before:not-italic;
+        @apply text-2xl font-semibold leading-relaxed my-10 italic before:content-['*'] before:text-4xl before:not-italic;
     }
 
     /* Classes for md content */
